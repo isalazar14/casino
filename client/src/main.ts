@@ -1,7 +1,7 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 // import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {bootstrapApplication} from '@angular/platform-browser';
-import { provideRouter } from '@angular/router';
+import { provideRouter, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { AppComponent } from './app/app.component';
 
@@ -18,6 +18,7 @@ if (environment.production) {
 const providers = [
   provideRouter(routes),
   importProvidersFrom(
+    // RouterModule.forRoot(routes),
     IonicModule.forRoot({})
   )
 ];
