@@ -1,0 +1,1 @@
+export type Suit = {symbol: string, name: string}
